@@ -3,7 +3,7 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Soft off-white background */
+    background-color: #f5f5f5;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -12,13 +12,15 @@ body {
   
   /* Header */
   header {
-    background-color: #1a1a1a; /* Deep charcoal */
+    background-color: #1a1a1a;
     color: white;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .header-content {
@@ -35,15 +37,15 @@ body {
   .header-text h1 {
     margin: 0;
     font-size: 2em;
-    font-family: 'Playfair Display', serif; /* Elegant serif font */
-    color: #d4af37; /* Gold accent */
+    font-family: 'Playfair Display', serif;
+    color: #d4af37;
   }
   
   .header-text p {
     margin: 5px 0 0;
     font-size: 1em;
     font-weight: 300;
-    color: #d4af37; /* Gold accent */
+    color: #d4af37;
   }
   
   nav ul {
@@ -65,13 +67,13 @@ body {
   }
   
   nav ul li a:hover {
-    color: #d4af37; /* Gold accent on hover */
+    color: #d4af37;
   }
   
   /* Hero Section */
   .hero {
     background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    color: #1a1a1a; /* Deep charcoal text */
+    color: #1a1a1a;
     padding: 100px 20px;
     text-align: center;
   }
@@ -79,19 +81,19 @@ body {
   .hero-content h2 {
     font-size: 2.5em;
     margin: 0;
-    font-family: 'Playfair Display', serif; /* Elegant serif font */
-    color: #1a1a1a; /* Deep charcoal */
+    font-family: 'Playfair Display', serif;
+    color: #1a1a1a;
   }
   
   .hero-content p {
     font-size: 1.2em;
     margin: 10px 0 20px;
-    color: #1a1a1a; /* Deep charcoal */
+    color: #1a1a1a;
   }
   
   .btn {
-    background-color: #d4af37; /* Gold button */
-    color: #1a1a1a; /* Deep charcoal text */
+    background-color: #d4af37;
+    color: #1a1a1a;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -99,7 +101,7 @@ body {
   }
   
   .btn:hover {
-    background-color: #b8860b; /* Darker gold on hover */
+    background-color: #b8860b;
   }
   
   /* Clothes List Section */
@@ -137,18 +139,18 @@ body {
   .clothes-item h2 {
     font-size: 1.5em;
     margin: 15px 0;
-    font-family: 'Playfair Display', serif; /* Elegant serif font */
-    color: #1a1a1a; /* Deep charcoal */
+    font-family: 'Playfair Display', serif;
+    color: #1a1a1a;
   }
   
   .clothes-item p {
     font-size: 1.2em;
-    color: #d4af37; /* Gold accent */
+    color: #d4af37;
     margin: 10px 0;
   }
   
-/* Modal Styles */
-.modal {
+  /* Modal Styles */
+  .modal {
     display: none;
     position: fixed;
     z-index: 1000;
@@ -185,9 +187,9 @@ body {
   }
   
   #modalImage {
-    width: 100%; /* Ensure the image takes up the full width of the modal */
-    max-height: 400px; /* Limit the height to prevent overflow */
-    object-fit: contain; /* Ensure the image scales proportionally */
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
     border-radius: 8px;
   }
   
@@ -230,7 +232,7 @@ body {
   }
   
   .clothes-item button {
-    background-color: #1a1a1a; /* Deep charcoal button */
+    background-color: #1a1a1a;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -240,19 +242,19 @@ body {
     transition: background-color 0.3s ease;
   }
   
-  
   .clothes-item button:hover {
-    background-color: #333; /* Slightly lighter charcoal on hover */
+    background-color: #333;
   }
-  
   
   /* Footer */
   footer {
     text-align: center;
     padding: 20px;
-    background-color: #1a1a1a; /* Deep charcoal */
+    background-color: #1a1a1a;
     color: white;
     margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .footer-content {
@@ -265,13 +267,13 @@ body {
   }
   
   .footer-content a {
-    color: #d4af37; /* Gold accent */
+    color: #d4af37;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .footer-content a:hover {
-    color: #b8860b; /* Darker gold on hover */
+    color: #b8860b;
   }
   
   .social-links {
@@ -279,12 +281,117 @@ body {
   }
   
   .social-links a {
-    color: #d4af37; /* Gold accent */
+    color: #d4af37;
     text-decoration: none;
     margin: 0 10px;
     transition: color 0.3s ease;
   }
   
   .social-links a:hover {
-    color: #b8860b; /* Darker gold on hover */
+    color: #b8860b;
+  }
+  
+  /* Mobile Responsive Styles */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header-text h1 {
+      font-size: 1.5em;
+    }
+  
+    .header-text p {
+      font-size: 0.9em;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .hero {
+      padding: 50px 10px;
+    }
+  
+    .hero-content h2 {
+      font-size: 1.8em;
+    }
+  
+    .hero-content p {
+      font-size: 1em;
+    }
+  
+    .btn {
+      padding: 8px 16px;
+      font-size: 0.9em;
+    }
+  
+    .clothes-list {
+      padding: 20px 10px;
+    }
+  
+    .clothes-item {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .clothes-item h2 {
+      font-size: 1.2em;
+    }
+  
+    .clothes-item p {
+      font-size: 1em;
+    }
+  
+    .clothes-item button {
+      padding: 8px 16px;
+      font-size: 0.9em;
+    }
+  
+    .modal-content {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    #modalImage {
+      max-height: 300px;
+    }
+  
+    .modal-description h2 {
+      font-size: 1.2em;
+    }
+  
+    .modal-description p {
+      font-size: 0.9em;
+    }
+  
+    footer {
+      padding: 10px;
+    }
+  
+    .footer-content p {
+      font-size: 0.9em;
+    }
+  
+    .social-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .social-links a {
+      margin: 5px 0;
+    }
   }
