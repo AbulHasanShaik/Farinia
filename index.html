@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farinia - Pakistani Clothes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="images/logo.webp" alt="Farinia Logo" class="logo">
+      <div class="header-text">
+        <h1>Farinia</h1>
+        <p>Apparel & Fabric</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Modesty is Elegant & Elegance is Timeless</h2>
+        <p>Modest Dresses | Arabic Clothes | Hijabs</p>
+        <a href="#collection" class="btn">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="clothes-list" id="collection">
+      <div class="clothes-item">
+        <img src="images/dress.jpg" alt="Pakistani Dress 1">
+        <h2>Embroidered Lawn Suit</h2>
+        <p>$50.00</p>
+        <button onclick="contactOwner()">Contact Owner</button>
+        <button onclick="openModal('item1')">See Item</button>
+      </div>
+
+      <div class="clothes-item">
+        <img src="images/dress.jpg" alt="Pakistani Dress 2">
+        <h2>Silk Party Wear</h2>
+        <p>$80.00</p>
+        <button onclick="contactOwner()">Contact Owner</button>
+        <button onclick="openModal('item2')">See Item</button>
+      </div>
+
+      <div class="clothes-item">
+        <img src="images/dress.jpg" alt="Pakistani Dress 3">
+        <h2>Cotton Summer Suit</h2>
+        <p>$40.00</p>
+        <button onclick="contactOwner()">Contact Owner</button>
+        <button onclick="openModal('item3')">See Item</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="itemModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-images">
+        <img id="modalImage" src="images/dress.jpg" alt="Item Image">
+        <div class="modal-navigation">
+          <button onclick="prevImage()">&#10094;</button>
+          <button onclick="nextImage()">&#10095;</button>
+        </div>
+      </div>
+      <div class="modal-description">
+        <h2 id="modalTitle">Embroidered Lawn Suit</h2>
+        <p id="modalText">This elegant lawn suit is perfect for summer. Available in multiple colors.</p>
+        <p id="modalAvailability">Availability: 5 left</p>
+      </div>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <div class="footer-content">
+      <p>Contact us via: <a href="mailto:fariniaclothes@example.com">fariniaclothes@example.com</a> or <a href="tel:+1(605)-111-1111">+1(605)-111-1111</a></p>
+      <div class="social-links">
+        <a href="#" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/farinia.usa/" target="_blank">Instagram</a>
+        <a href="#" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
