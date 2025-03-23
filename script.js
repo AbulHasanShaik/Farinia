@@ -2,7 +2,7 @@
 const items = [
     {
       id: "item1",
-      images: ["images/dress.jpg", "images/dress2.jpg", "images/dress.jpg"],
+      images: ["images/dress.webp", "images/dress2.jpg", "images/dress.webp"],
       title: "Embroidered Lawn Suit",
       description: "This elegant lawn suit is perfect for summer. Available in multiple colors.",
       price: "$50.00",
@@ -10,7 +10,7 @@ const items = [
     },
     {
       id: "item2",
-      images: ["images/dress.jpg", "images/dress.jpg", "images/dress.jpg"],
+      images: ["images/dress.webp", "images/dress.webp", "images/dress.webp"],
       title: "Silk Party Wear",
       description: "A luxurious silk outfit for special occasions. Available in multiple colors.",
       price: "$80.00",
@@ -18,7 +18,7 @@ const items = [
     },
     {
       id: "item3",
-      images: ["images/dress.jpg", "images/dress.jpg", "images/dress.jpg"],
+      images: ["images/dress.webp", "images/dress.webp", "images/dress.webp"],
       title: "Cotton Summer Suit",
       description: "A comfortable and stylish cotton suit for everyday wear. Available in multiple colors.",
       price: "$40.00",
